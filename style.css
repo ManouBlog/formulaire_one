@@ -1,0 +1,103 @@
+*::after,*::before,*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.conteneur_button button img{
+    width:30px;
+    height: 30px;
+}
+.btn_sign_in_google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteneur{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+}
+.conteneur .image{
+    position: relative;
+    flex: 1;
+    padding:.5em;
+}
+.conteneur .conteneur_form{
+    position: relative;
+    flex: 1;
+    padding:0 2em;
+}
+.conteneur .image div{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+}
+.conteneur .image div img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;   
+    height: 100%; 
+    object-fit: cover; 
+}
+.conteneur_form h1,.conteneur_form span{
+    line-height:1.3em;
+    margin: .3em 0;
+}
+.conteneur_form .form{
+    padding: 2em 0;
+}
+form .forget{
+    text-align: center;
+    padding: 0 0 1.5em 0;
+}
+form .forget a,.conteneur_form span a{
+    color: black;
+}
+form button{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    border: none;
+    margin: 1.5em 0 0 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:nth-child(2){
+    background-color: rgba(197, 197, 197, 0.756);
+    color: black;
+   
+}
+.conteneur_form .form input,.conteneur_form .form input:focus{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 0px;
+    border: 1px solid black;
+    margin: .5em 0;
+    padding: .5em;
+}
+.conteneur_form .form label{
+    font-weight: bold;
+    font-size: .8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (max-width:589px) {
+    .conteneur .image{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .conteneur .conteneur_form{
+        padding:1em;
+    }
+    .conteneur_form .form input,.conteneur_form .form input:focus{
+        padding: 0;
+    }
+}
+
